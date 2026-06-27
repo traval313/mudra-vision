@@ -1,0 +1,17 @@
+# Dataset files
+bharatanatyam-mudra-dataset-balanced.zip
+images/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Model outputs
+runs/
+models/
+*.pt
+
+# macOS
+.DS_Store
