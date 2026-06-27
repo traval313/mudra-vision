@@ -11,6 +11,7 @@ venv/
 # Model outputs
 runs/
 models/
+outputs/
 *.pt
 
 # macOS
