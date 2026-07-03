@@ -9,9 +9,9 @@ __pycache__/
 venv/
 
 # Model outputs
-runs/
-models/
-outputs/
+/runs/
+/models/
+/outputs/
 *.pt
 
 # macOS

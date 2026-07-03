@@ -144,6 +144,39 @@ args.yaml
 
 `best.pt` contains the highest-performing model checkpoint.
 
+## Landmark Classifier
+
+Extract MediaPipe hand landmarks from the image dataset:
+
+```bash
+python -m src.features.extract_landmarks
+```
+
+This writes:
+
+```text
+outputs/features/train_landmarks.csv
+outputs/features/val_landmarks.csv
+```
+
+Train the landmark-based classifier:
+
+```bash
+python -m src.models.train_landmark_classifier
+```
+
+This saves:
+
+```text
+models/landmark_classifier.joblib
+```
+
+Predict a single image:
+
+```bash
+python -m src.inference.predict_landmark_image path/to/image.jpg
+```
+
 ---
 
 ## Validation
